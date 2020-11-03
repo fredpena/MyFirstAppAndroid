@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:fillViewport="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" android:id="@+id/clean"
+                android:text="@string/button_clear"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/send" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16dp" android:onClick="clean"/>
+
+        <Button
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" android:id="@+id/send"
+                android:text="@string/button_send"
+                android:onClick="sendMessage"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/clean"/>
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/lastName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/lastName"
+                app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/name" android:autofillHints=""/>
+        <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/name"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="parent"
+                android:hint="@string/name"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp" android:autofillHints=""/>
+
+        <Spinner
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/gender" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/lastName" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/textView2"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                app:layout_constraintHorizontal_bias="0.5"/>
+        <TextView
+                android:text="@string/gender"
+                android:layout_width="130dp"
+                android:layout_height="22dp" android:id="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/lastName" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/gender"
+                android:textSize="18sp"/>
+        <TextView
+                android:text="@string/dateOfBirth"
+                android:layout_width="130dp"
+                android:layout_height="22dp" android:id="@+id/textView3"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/dateOfBirth"
+                android:textSize="18sp"/>
+        <TextView
+                android:text="@string/likeProgramming"
+                android:layout_width="170dp"
+                android:layout_height="22dp" android:id="@+id/textView4"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:textSize="18sp" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/rgLikePro"/>
+
+        <TextView
+                android:text="@string/language"
+                android:layout_width="130dp"
+                android:layout_height="22dp" android:id="@+id/textView5"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cbJava"/>
+        <TextView
+                android:layout_width="130dp"
+                android:layout_height="22dp" android:id="@+id/textView6"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView5"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cbJS"/>
+        <TextView
+                android:layout_width="130dp"
+                android:layout_height="22dp" android:id="@+id/textView8"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cbCCpp"/>
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="22dp"
+                app:layout_constraintEnd_toEndOf="parent" android:id="@+id/dateOfBirth"
+                app:layout_constraintStart_toEndOf="@+id/textView3" android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginEnd="16dp" android:layout_marginRight="16dp"
+                android:textSize="18sp" android:onClick="showDatePickerDialog"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView3"/>
+        <RadioGroup
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/textView4" android:layout_marginTop="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/dateOfBirth" android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/rgLikePro"
+                app:layout_constraintHorizontal_bias="0.5">
+            <RadioButton
+                    android:text="@string/rbYes"
+                    android:layout_width="100dp"
+                    android:layout_height="22dp" android:id="@+id/rbYes" android:textSize="18sp"
+                    android:onClick="onRadioButtonClicked"/>
+            <RadioButton
+                    android:text="@string/rbNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp" android:id="@+id/rbNo" android:textSize="18sp"
+                    android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+        <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbJava"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cbPython"
+                android:text="@string/lan_java" android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView5"/>
+        <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbJS"
+                android:text="@string/lan_js" android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/textView6"
+                app:layout_constraintEnd_toStartOf="@+id/cbGo"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintBaseline_toBaselineOf="@+id/textView6"/>
+        <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbCCpp"
+                android:text="@string/lan_c_cpp" android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/textView8"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/cbCSharp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/textView8"/>
+        <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbCSharp"
+                android:text="@string/lan_csharp" android:textSize="18sp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp" app:layout_constraintStart_toEndOf="@+id/cbCCpp"
+                app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="16dp" android:layout_marginEnd="16dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cbCCpp"/>
+        <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbGo"
+                android:text="@string/lan_go" android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintStart_toEndOf="@+id/cbJS" app:layout_constraintHorizontal_bias="0.5"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cbJS"/>
+        <CheckBox
+                android:text="@string/lan_python"
+                android:layout_width="0dp"
+                android:layout_height="22dp" android:id="@+id/cbPython"
+                android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@+id/cbJava" android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5" android:textSize="18sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/cbJava"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

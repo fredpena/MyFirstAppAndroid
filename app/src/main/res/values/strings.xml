@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">My First Application</string>
+    <string name="name">Digite un nombre...</string>
+    <string name="lastName">Digite un apellido...</string>
+    <string name="button_send">Enviar</string>
+    <string name="gender">Genero:</string>
+    <string name="dateOfBirth">Nacimiento:</string>
+    <string name="likeProgramming">Le gusta programar?</string>
+    <string name="rbYes">Si</string>
+    <string name="rbNo">No</string>
+    <string name="language">Lenguaje:</string>
+    <string name="lan_java">Java</string>
+    <string name="lan_js">JS</string>
+    <string name="lan_csharp">C #</string>
+    <string name="lan_python">Python</string>
+    <string name="lan_go">Go Land</string>
+    <string name="lan_c_cpp">C/C++</string>
+    <string name="button_clear">Limpiar</string>
+
+    <string name="aip_header">Choose what to allow APP to access</string>
+    <string name="storage">Storage</string>
+    <string name="storage_desc">access photos, media, and files on your device</string>
+    <string name="location">Location</string>
+    <string name="location_desc">access this device`s location</string>
+    <string name="camara">Camara</string>
+    <string name="camara_desc">take pictures and record video</string>
+    <string name="microphone">Microphone</string>
+    <string name="microphone_desc">record audio</string>
+    <string name="phone">Phone</string>
+    <string name="phone_desc">make and manage phone calls</string>
+    <string name="contacts">Contacts</string>
+    <string name="contacts_desc">access your contacts</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_cancel">Cancel</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
